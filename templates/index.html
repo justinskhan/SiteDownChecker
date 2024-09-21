@@ -1,0 +1,18 @@
+<!DOCTYPE html> <!--html beginning-->
+<html> 
+<head> 
+    <title>Site Connectivity Checker</title> 
+</head>
+<body> 
+    <h2>Site Connectivity Checker</h2> <!--header for site-->
+    <form action ="{{url_for('check') }}" method="POST"> 
+        <!--Form tag allows for input and then use post method to send info-->
+        <input type="text" name="url" placeholder="Enter URL" required="required"> 
+        <!--Make an input area for url with placeholder text being Enter URL and the required value makes it so form cant be submitted without input-->
+        <input type="submit" value="Check"> <!--Our Check button-->
+
+    </form>
+
+</body>
+
+</html>
